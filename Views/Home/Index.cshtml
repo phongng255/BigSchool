@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h1>Danh sách các khóa học sắp tới</h1>
+
+<div class="row">
+    <ul>
+        @foreach (var course in Model)
+        {
+            <li>
+                @course.DateTime.ToString("dd/MM/yyyy HH:mm") - @course.Name
+            </li>
+        }
+    </ul>
+</div>
