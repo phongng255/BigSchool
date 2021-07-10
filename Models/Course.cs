@@ -9,19 +9,29 @@
     [Table("Course")]
     public partial class Course
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Course()
+        {
+            Attendances = new HashSet<Attendance>();
+        }
 
         public int Id { get; set; }
 
         [Required]
         [StringLength(128)]
         public string LecturerID { get; set; }
-        [Required(ErrorMessage = "Place không được để trống")]
+
+        [Required]
         [StringLength(255)]
         public string Place { get; set; }
-        [Required(ErrorMessage = "DateTime không được để trống")]
+
         public DateTime DateTime { get; set; }
 
         public int CategoryID { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Attendance> Attendances { get; set; }
+
         public List<Category> listcategory = new List<Category>();
         public virtual Category Category { get; set; }
         public string Name;

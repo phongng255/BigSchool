@@ -77,6 +77,8 @@ C:\Users\Phong\source\repos\BigSchool\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Phong\source\repos\BigSchool\bin\System.Web.WebPages.dll
 C:\Users\Phong\source\repos\BigSchool\bin\System.Web.WebPages.Razor.dll
 C:\Users\Phong\source\repos\BigSchool\bin\WebGrease.dll
+C:\Users\Phong\source\repos\BigSchool\bin\EntityFramework.xml
+C:\Users\Phong\source\repos\BigSchool\bin\EntityFramework.SqlServer.xml
 C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Helpers.xml
 C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Mvc.xml
 C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Optimization.xml
@@ -86,8 +88,6 @@ C:\Users\Phong\source\repos\BigSchool\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Phong\source\repos\BigSchool\bin\System.Web.WebPages.Razor.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Newtonsoft.Json.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Antlr3.Runtime.pdb
-C:\Users\Phong\source\repos\BigSchool\bin\EntityFramework.xml
-C:\Users\Phong\source\repos\BigSchool\bin\EntityFramework.SqlServer.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -101,8 +101,15 @@ C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Phong\source\repos\BigSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Phong\source\repos\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache
 C:\Users\Phong\source\repos\BigSchool\obj\Debug\BigSchool.csproj.CoreCompileInputs.cache
 C:\Users\Phong\source\repos\BigSchool\obj\Debug\BigSchool.csproj.CopyComplete
 C:\Users\Phong\source\repos\BigSchool\obj\Debug\BigSchool.dll
 C:\Users\Phong\source\repos\BigSchool\obj\Debug\BigSchool.pdb
+C:\Users\Phong\source\repos\BigSchool\bin\Content\Site.css
+C:\Users\Phong\source\repos\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache
+C:\Users\Phong\source\repos\BigSchool\bin\System.Net.Http.Formatting.dll
+C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Http.dll
+C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Http.WebHost.dll
+C:\Users\Phong\source\repos\BigSchool\bin\System.Net.Http.Formatting.xml
+C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Http.xml
+C:\Users\Phong\source\repos\BigSchool\bin\System.Web.Http.WebHost.xml
