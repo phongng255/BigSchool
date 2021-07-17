@@ -1,4 +1,4 @@
-﻿namespace BigSchool.Models
+namespace BigSchool.Models
 {
     using System;
     using System.Collections.Generic;
@@ -32,8 +32,11 @@
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Attendance> Attendances { get; set; }
 
-        public List<Category> listcategory = new List<Category>();
         public virtual Category Category { get; set; }
+        public List<Category> listcategory = new List<Category>();
         public string Name;
+        public bool isLogin = false;
+        public bool isShowGoing = false;
+        public bool isShowFoollow = false;
     }
 }

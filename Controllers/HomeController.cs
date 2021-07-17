@@ -15,14 +15,24 @@ namespace BigSchool.Controllers
 
         public ActionResult Index()
         {
-            BigSchoolContext context = new BigSchoolContext();
-            //doi xi doc lap cai
-           
+            BigSchoolContext context = new BigSchoolContext();     
             var upcommingCourse = context.Courses.Where(p => p.DateTime > DateTime.Now).OrderBy(p => p.DateTime).ToList();
+            var userID = User.Identity.GetUserId();
             foreach (Course i in upcommingCourse)
             {
                 ApplicationUser user = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(i.LecturerID);
                 i.Name = user.Name;
+                if(userID != null)
+                {
+                    i.isLogin = true;
+                    Attendance find = context.Attendances.FirstOrDefault(p => p.CourseId == i.Id && p.Attendee == userID);
+                    if (find == null)
+                        i.isShowGoing = true;
+                    Following findFollow = context.Followings.FirstOrDefault(p => p.FollowerId == userID && p.FolloweeId == i.LecturerID);
+                    if (findFollow == null)
+                        i.isShowFoollow = true;
+                }
+               
             }
             return View(upcommingCourse);
             
